@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogo</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./index.js" defer></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/9da116f39f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+           <a href="#"><h1>BODAS</h1></a>
+        </header> 
+
+        <main class="container">
+            
+            <form id="form">
+                <label for="kick">Digite um número (0 - 1000):</label>
+                <input type="number" id="kick" max="1000" placeholder="0">
+                <button type="submit">Jogar</button>
+            </form>
+
+            <section class="result-box" id="result">
+                <h2 id="status">Adivinhe o número sorteado!</h2>
+                <span id="attempt">Tentativas: 0</span>
+            </section>
+
+            <button id="btnRestart" onclick="restart()">Começar novamente!</button>
+        </main>
+
+       <footer>
+           <p>GuessNumber, 2021 &copy;</p>
+       </footer>
+    </body>
+</html>
